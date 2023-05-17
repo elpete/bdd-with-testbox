@@ -469,3 +469,12 @@ Validate the `from` and `to` keys are present or return an appropriate status co
 ### Solution
 **Show the refactorability of integration tests**
 
+## BONUS: Step 10
+Show a log in integration test from query execute to Quick
+
+## BONUS: Step 11
+cbPlaywright or Cypress
+
+## BONUS: Step 12
+GitLab CI and GitHub Actions
+
