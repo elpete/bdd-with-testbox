@@ -5,9 +5,9 @@ component implements="CurrencyApiInterface" {
         required string toCurrency
     ) {
         var result = "";
-        cfhttp( url = "https://api.exchangeratesapi.io/latest", result = "local.result" ) {
-            cfhttpparam( type = "url", name = "base", value = arguments.fromCurrency );
-            cfhttpparam( type = "url", name = "symbols", value = arguments.toCurrency );
+        cfhttp( url = "https://api.exchangerate.host/convert", result = "local.result" ) {
+            cfhttpparam( type = "url", name = "from", value = arguments.fromCurrency );
+            cfhttpparam( type = "url", name = "to", value = arguments.toCurrency );
         }
         if ( local.result.status_code != 200 ) {
             throw( type = "CurrencyNotFound" );

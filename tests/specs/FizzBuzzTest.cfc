@@ -6,7 +6,6 @@ component extends="testbox.system.BaseSpec" {
 
     function run() {
         describe( "fizz buzz", () => {
-
             it( "does something", function() {
                 var fizzbuzz = new FizzBuzzConverter();
                 expect( fizzbuzz.convert( 3 ) ).toBeFizz()

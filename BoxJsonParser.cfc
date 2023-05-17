@@ -8,15 +8,15 @@ component {
         return this;
     }
 
-    function getDevDependencies() {
+    public struct function getDevDependencies() {
         return getParsedJson().devDependencies;
     }
 
-    function getVersion() {
+    public string function getVersion() {
         return getParsedJson().version;
     }
 
-    function getParsedJson() {
+    private struct function getParsedJson() {
         if ( isNull( variables.fileContent ) ) {
             variables.fileContent = loadFile();
         }
@@ -26,7 +26,7 @@ component {
         return deserializeJSON( variables.fileContent );
     }
 
-    function loadFile() {
+    private string function loadFile() {
         return fileRead( variables.path );
     }
 
