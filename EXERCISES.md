@@ -10,14 +10,10 @@ Setup repo with Test Runner
 3. `install testbox-cli`
 4. `install testbox`
 5. `testbox generate harness`
-6. Add `/root` mapping to `tests/Application.cfc`
-```cfc
-this.mappings[ "/root" ] = expandPath( "/" );
-```
-7. `server start`
-8. Navigate to `/tests/runner.cfm`
-9. Also try `testbox run` from CommandBox
-10. (BONUS) Try `testbox watch` from CommandBox, then edit the sample `BDDTest.cfc`.
+6. `server start`
+7. Navigate to `/tests/runner.cfm`
+8. Also try `testbox run` from CommandBox
+9. (BONUS) Try `testbox watch` from CommandBox, then edit the sample `BDDTest.cfc`.
 
 ## Step 1 (5 minutes)
 ### Exercise — Create an XUnit Calculator Spec
